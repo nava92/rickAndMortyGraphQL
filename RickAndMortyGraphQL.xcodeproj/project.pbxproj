@@ -11,6 +11,7 @@
 		1FBB69912A6BC3F600D9AE3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB69902A6BC3F600D9AE3B /* ContentView.swift */; };
 		1FBB69932A6BC3F800D9AE3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBB69922A6BC3F800D9AE3B /* Assets.xcassets */; };
 		1FBB69962A6BC3F800D9AE3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBB69952A6BC3F800D9AE3B /* Preview Assets.xcassets */; };
+		1FBB699E2A6BCE8300D9AE3B /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 1FBB699D2A6BCE8300D9AE3B /* Apollo */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBB699E2A6BCE8300D9AE3B /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = RickAndMortyGraphQL;
+			packageProductDependencies = (
+				1FBB699D2A6BCE8300D9AE3B /* Apollo */,
+			);
 			productName = RickAndMortyGraphQL;
 			productReference = 1FBB698B2A6BC3F600D9AE3B /* RickAndMortyGraphQL.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 1FBB69822A6BC3F600D9AE3B;
+			packageReferences = (
+				1FBB699C2A6BCE8300D9AE3B /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
 			productRefGroup = 1FBB698C2A6BC3F600D9AE3B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1FBB699C2A6BCE8300D9AE3B /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1FBB699D2A6BCE8300D9AE3B /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FBB699C2A6BCE8300D9AE3B /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1FBB69832A6BC3F600D9AE3B /* Project object */;
 }
