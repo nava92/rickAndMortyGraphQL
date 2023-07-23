@@ -13,6 +13,8 @@
 		1FBB69962A6BC3F800D9AE3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBB69952A6BC3F800D9AE3B /* Preview Assets.xcassets */; };
 		1FBB699E2A6BCE8300D9AE3B /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 1FBB699D2A6BCE8300D9AE3B /* Apollo */; };
 		1FBB69AE2A6BEDAF00D9AE3B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB69AD2A6BEDAF00D9AE3B /* API.swift */; };
+		1FBB69B32A6CAE2B00D9AE3B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB69B22A6CAE2B00D9AE3B /* NetworkManager.swift */; };
+		1FBB69B62A6CAEBC00D9AE3B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB69B52A6CAEBB00D9AE3B /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1FBB69AB2A6BEC3300D9AE3B /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
 		1FBB69AC2A6BECE900D9AE3B /* Queries.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = Queries.graphql; sourceTree = "<group>"; };
 		1FBB69AD2A6BEDAF00D9AE3B /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		1FBB69B22A6CAE2B00D9AE3B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		1FBB69B52A6CAEBB00D9AE3B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 		1FBB698D2A6BC3F600D9AE3B /* RickAndMortyGraphQL */ = {
 			isa = PBXGroup;
 			children = (
+				1FBB69B42A6CAE9100D9AE3B /* Constants */,
+				1FBB69B12A6CAE1100D9AE3B /* Network */,
 				1FBB69AA2A6BEC0400D9AE3B /* GraphQL */,
 				1FBB698E2A6BC3F600D9AE3B /* RickAndMortyGraphQLApp.swift */,
 				1FBB69902A6BC3F600D9AE3B /* ContentView.swift */,
@@ -82,6 +88,22 @@
 				1FBB69AD2A6BEDAF00D9AE3B /* API.swift */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		1FBB69B12A6CAE1100D9AE3B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB69B22A6CAE2B00D9AE3B /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1FBB69B42A6CAE9100D9AE3B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1FBB69B52A6CAEBB00D9AE3B /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +204,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBB69B62A6CAEBC00D9AE3B /* Constants.swift in Sources */,
+				1FBB69B32A6CAE2B00D9AE3B /* NetworkManager.swift in Sources */,
 				1FBB69912A6BC3F600D9AE3B /* ContentView.swift in Sources */,
 				1FBB69AE2A6BEDAF00D9AE3B /* API.swift in Sources */,
 				1FBB698F2A6BC3F600D9AE3B /* RickAndMortyGraphQLApp.swift in Sources */,
