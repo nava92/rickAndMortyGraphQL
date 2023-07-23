@@ -6,21 +6,32 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct CharacterListRowView: View {
     
     let character: CharacterSmall
     
     var body: some View {
-            
-        VStack(alignment: .leading) {
-            Text(character.name ?? "Loading...")
-                .font(.title3)
-                .foregroundColor(.accentColor)
-                .redacted(reason: character.name == nil ? .placeholder : [])
-            Text("\(character.episode.count) episode(s)")
-                .font(.footnote)
-                .foregroundColor(.gray)
+        HStack {
+            if let image = character.image, let url = URL(string: image) {
+                KFImage(url)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 60, height: 60)
+                    .cornerRadius(30)
+            } else {
+                Image(systemName: "person")
+            }
+            VStack(alignment: .leading) {
+                Text(character.name ?? "Loading...")
+                    .font(.title3)
+                    .foregroundColor(.accentColor)
+                    .redacted(reason: character.name == nil ? .placeholder : [])
+                Text("\(character.episode.count) episode(s)")
+                    .font(.footnote)
+                    .foregroundColor(.gray)
+            }
         }
     }
 }
