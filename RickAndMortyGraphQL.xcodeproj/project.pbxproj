@@ -19,6 +19,7 @@
 		1FBB69BC2A6CC07F00D9AE3B /* CharacterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB69BB2A6CC07F00D9AE3B /* CharacterListView.swift */; };
 		1FBB69BE2A6CC2A900D9AE3B /* CharacterListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB69BD2A6CC2A900D9AE3B /* CharacterListRowView.swift */; };
 		1FBB69C12A6CC42C00D9AE3B /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB69C02A6CC42C00D9AE3B /* CharacterDetailView.swift */; };
+		1FBB69C72A6CD0C100D9AE3B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1FBB69C62A6CD0C100D9AE3B /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FBB69C72A6CD0C100D9AE3B /* Kingfisher in Frameworks */,
 				1FBB699E2A6BCE8300D9AE3B /* Apollo in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,6 +163,7 @@
 			name = RickAndMortyGraphQL;
 			packageProductDependencies = (
 				1FBB699D2A6BCE8300D9AE3B /* Apollo */,
+				1FBB69C62A6CD0C100D9AE3B /* Kingfisher */,
 			);
 			productName = RickAndMortyGraphQL;
 			productReference = 1FBB698B2A6BC3F600D9AE3B /* RickAndMortyGraphQL.app */;
@@ -192,6 +195,7 @@
 			mainGroup = 1FBB69822A6BC3F600D9AE3B;
 			packageReferences = (
 				1FBB699C2A6BCE8300D9AE3B /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				1FBB69C52A6CD0C100D9AE3B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 1FBB698C2A6BC3F600D9AE3B /* Products */;
 			projectDirPath = "";
@@ -459,6 +463,14 @@
 				version = 0.51.2;
 			};
 		};
+		1FBB69C52A6CD0C100D9AE3B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -466,6 +478,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1FBB699C2A6BCE8300D9AE3B /* XCRemoteSwiftPackageReference "apollo-ios" */;
 			productName = Apollo;
+		};
+		1FBB69C62A6CD0C100D9AE3B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FBB69C52A6CD0C100D9AE3B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
