@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F5C11782A6CEFF70087B80A /* SingleQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C11772A6CEFF70087B80A /* SingleQuery.swift */; };
 		1FBB698F2A6BC3F600D9AE3B /* RickAndMortyGraphQLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB698E2A6BC3F600D9AE3B /* RickAndMortyGraphQLApp.swift */; };
-		1FBB69912A6BC3F600D9AE3B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBB69902A6BC3F600D9AE3B /* ContentView.swift */; };
 		1FBB69932A6BC3F800D9AE3B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBB69922A6BC3F800D9AE3B /* Assets.xcassets */; };
 		1FBB69962A6BC3F800D9AE3B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBB69952A6BC3F800D9AE3B /* Preview Assets.xcassets */; };
 		1FBB699E2A6BCE8300D9AE3B /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 1FBB699D2A6BCE8300D9AE3B /* Apollo */; };
@@ -23,9 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F5C11772A6CEFF70087B80A /* SingleQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleQuery.swift; sourceTree = "<group>"; };
 		1FBB698B2A6BC3F600D9AE3B /* RickAndMortyGraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyGraphQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBB698E2A6BC3F600D9AE3B /* RickAndMortyGraphQLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyGraphQLApp.swift; sourceTree = "<group>"; };
-		1FBB69902A6BC3F600D9AE3B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1FBB69922A6BC3F800D9AE3B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1FBB69952A6BC3F800D9AE3B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1FBB69AB2A6BEC3300D9AE3B /* schema.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
@@ -76,7 +76,6 @@
 				1FBB69B12A6CAE1100D9AE3B /* Network */,
 				1FBB69AA2A6BEC0400D9AE3B /* GraphQL */,
 				1FBB698E2A6BC3F600D9AE3B /* RickAndMortyGraphQLApp.swift */,
-				1FBB69902A6BC3F600D9AE3B /* ContentView.swift */,
 				1FBB69922A6BC3F800D9AE3B /* Assets.xcassets */,
 				1FBB69942A6BC3F800D9AE3B /* Preview Content */,
 			);
@@ -97,6 +96,7 @@
 				1FBB69AB2A6BEC3300D9AE3B /* schema.json */,
 				1FBB69AC2A6BECE900D9AE3B /* Queries.graphql */,
 				1FBB69AD2A6BEDAF00D9AE3B /* API.swift */,
+				1F5C11772A6CEFF70087B80A /* SingleQuery.swift */,
 			);
 			path = GraphQL;
 			sourceTree = "<group>";
@@ -249,7 +249,7 @@
 				1FBB69BE2A6CC2A900D9AE3B /* CharacterListRowView.swift in Sources */,
 				1FBB69B32A6CAE2B00D9AE3B /* NetworkManager.swift in Sources */,
 				1FBB69BC2A6CC07F00D9AE3B /* CharacterListView.swift in Sources */,
-				1FBB69912A6BC3F600D9AE3B /* ContentView.swift in Sources */,
+				1F5C11782A6CEFF70087B80A /* SingleQuery.swift in Sources */,
 				1FBB69AE2A6BEDAF00D9AE3B /* API.swift in Sources */,
 				1FBB69BA2A6CBF9400D9AE3B /* CharacterListViewModel.swift in Sources */,
 				1FBB698F2A6BC3F600D9AE3B /* RickAndMortyGraphQLApp.swift in Sources */,

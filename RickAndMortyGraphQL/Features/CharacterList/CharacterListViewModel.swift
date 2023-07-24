@@ -13,7 +13,7 @@ class CharacterListViewModel: ObservableObject {
     @Published public var charactersList: [CharacterSmall]?
     public var placeholders = Array(repeating: CharacterSmall(id: GraphQLID(0), name: nil, image: nil, episode: []), count: 10)
     
-    func getCharacersList() async throws {
+    @MainActor func getCharacersList() async throws {
         self.charactersList = try await NetworkManager.instance.getCharactersList()
     }
     
