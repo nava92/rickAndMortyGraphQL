@@ -15,7 +15,8 @@ struct CharacterListView: View {
         NavigationView {
             List {
                 ForEach(data.charactersList ?? data.placeholders, id: \.id) { character in NavigationLink (
-                    destination: CharacterDetailView(),
+                    /// We can safely force unwrap here because every character has its own id.
+                    destination: CharacterDetailView(id: character.id!),
                     label: {
                         CharacterListRowView(character: character)
                     })
