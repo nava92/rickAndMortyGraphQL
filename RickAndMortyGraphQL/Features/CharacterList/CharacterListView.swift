@@ -21,16 +21,34 @@ struct CharacterListView: View {
                         CharacterListRowView(character: character)
                     })
                 }
-                .navigationTitle(AppConstants.CharactersListViewTitle)
-                .task {
-                    Task {
-                        try await data.getCharacersList()
-                    }
+                if data.shouldDisplayNextPage {
+                    nextPageView
+                }
+            }
+            .navigationTitle(AppConstants.CharactersListViewTitle)
+            .task {
+                Task {
+                    try await data.getCharacersList()
                 }
             }
         }
     }
-}
+    
+    private var nextPageView: some View {
+            HStack {
+                Spacer()
+                VStack {
+                    ProgressView()
+                    Text("Loading next page...")
+                }
+                Spacer()
+            }
+            .onAppear(perform: {
+                data.currentPage += 1
+            })
+        }
+    }
+
 
     struct CharacterListView_Previews: PreviewProvider {
         static var previews: some View {
