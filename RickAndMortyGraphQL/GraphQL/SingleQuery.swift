@@ -9,7 +9,7 @@ import Foundation
 import Apollo
 import SwiftUI
 
-public class SingleQuery<Query: GraphQLQuery>: ObservableObject {
+final class SingleQuery<Query: GraphQLQuery>: ObservableObject {
     
     @Published public var data: Query.Data?
     @Published public var error: Error?

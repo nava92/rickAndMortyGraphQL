@@ -17,14 +17,14 @@ final class NetworkManager {
     private(set) lazy var apolloURL = ApolloClient(url: URL(string: AppConstants.apolloEndpointURL)!)
     
     @MainActor
-    func getCharactersList() async throws -> [CharacterSmall] {
+    func getCharactersList(page: Int) async throws -> (character: [CharacterSmall], pages: Int?, totalCharacters: Int?) {
         return await withCheckedContinuation({ continuation in
-            apolloURL.fetch(query: GetCharactersQuery()) { response in
+            apolloURL.fetch(query: GetCharactersQuery(page: page)) { response in
                 switch response {
                 case .success(let characterList):
-                    continuation.resume(returning: characterList.data?.characters?.results?.compactMap({$0?.fragments.characterSmall}) ?? [])
+                    continuation.resume(returning: (character: characterList.data?.characters?.results?.compactMap({$0?.fragments.characterSmall}) ?? [], characterList.data?.characters?.info?.pages, totalCharacters: characterList.data?.characters?.info?.count))
                 case .failure(let error):
-                    print(error.localizedDescription)
+                    print("GraphQL query error: \(error.localizedDescription)")
                 }
             }
         })
